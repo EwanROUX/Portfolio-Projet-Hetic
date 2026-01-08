@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // 4. Si rien n'est trouvé, on peut vider l'input ou donner un feedback
+      // 4. Si rien n'est trouvé, on peut vider "l'input" ou donner un "feedback
       if (!found) {
         console.log("Aucune compétence correspondante.");
         // Optionnel : searchInput.value = "";
