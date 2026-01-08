@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Ewan Roux | UI/UX & Web Marketer</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Ewan Roux</div>
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- Ajout de la barre de Recherche  -->
+          <div class="search-container"> 
+            <input
+              type="text"
+              id="skill-search"
+              placeholder="Rechercher"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>UI/UX Designer & <br />Web Marketer Junior</h1>
+        <p>
+          Je suis étudiant chez HETIC, passionné par la conception d'interfaces
+          intuitives (UI/UX) et le développement web créatif.
+        </p>
+        <a href="#projects" class="cta-button">Découvrir mes projets</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">À propos de moi</h2>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img src="ImageMoi.png" alt="Photo de Ewan Roux" />
+          </div>
+
+          <div class="about-text">
+            <h2>Qui suis-je ?</h2>
+            <p>
+              Je suis un designer et développeur en formation Bachelor
+              Webmarketing & UX/UI. J'aime résoudre des problèmes complexes par
+              le design, le code et l'IA.
+            </p>
+            <p>
+              Mon objectif est de créer des expériences utilisateurs fluides et
+              mémorables. Je travaille avec des outils modernes comme Figma pour
+              le maquettage et JavaScript/Python pour donner vie aux idées.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Mes Compétences</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>Design UI/UX</h3>
+            <p>
+              Figma, Prototypage, Conception visuelle, Hiérarchie visuelle
+              soignée.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>Programmation</h3>
+            <p>HTML, CSS, JavaScript, Python, Canvas API, Three.js.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🚀</div>
+            <h3>Gestion & Outils</h3>
+            <p>Git & Git Flow, Terminal, SEO, Google Analytics, Notion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Mes Projets Récents</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image project-img-1">
+              <img
+                src="POKEMONRPG.png"
+                alt="Aperçu du projet RPG JS"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px;
+                "
+              />
+            </div>
+            <div class="project-content">
+              <h3>RPG JS "Living World"</h3>
+              <p>
+                Développement d'un RPG complet en JavaScript natif (Canvas API).
+                Exploration, combats au tour par tour, gestion d'équipe et
+                persistance des données.
+              </p>
+              <a
+                href="https://github.com/ewanroux47r"
+                target="_blank"
+                class="project-link"
+                >Voir le code sur GitHub →</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image project-img-2"
+              style="
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                disablePictureInPicture
+                style="width: 100%; height: 100%; object-fit: cover"
+              >
+                <source src="MAP3D.mov" type="video/mp4" />
+                <source src="MAP3D.mov" type="video/quicktime" />
+              </video>
+            </div>
+            <div class="project-content">
+              <h3>Globe Virtuel Interactif</h3>
+              <p>
+                Application web immersive avec Three.js intégrant une carte en
+                3D photoréaliste. Visualisation de données, cycle jour/nuit et
+                météo dynamique.
+              </p>
+              <a
+                href="https://github.com/ewanroux47r"
+                target="_blank"
+                class="project-link"
+                >Voir le code sur GitHub →</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image project-img-1">
+              <img
+                src="CARN'RED.jpg"
+                alt="Aperçu du projet CARN'RED"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px;
+                "
+              />
+            </div>
+            <div class="project-content">
+              <h3>Maquette Interactive Porsche</h3>
+              <p>
+                Maquette Figma animée pour la marque Porsche (GT3 RS).
+                Expérience de vente immersive avec animations dynamiques et
+                prototypage avancé.
+              </p>
+              <a href="#" class="project-link">Voir la maquette →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Me Contacter</h2>
+        <p style="text-align: center; margin-bottom: 20px">
+          ewanroux47r@gmail.com | 06 66 72 07 16
+        </p>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Votre email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+              UI/UX Designer & Web Marketer Junior en formation, alliant
+              créativité visuelle et logique technique.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <p><a href="#about" class="footer-link">À propos</a></p>
+            <p><a href="#projects" class="footer-link">Projets</a></p>
+            <p><a href="#contact" class="footer-link">Contact</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Suivez-moi</h3>
+            <div class="social-links">
+              <a
+                href="https://github.com/ewanroux47r"
+                target="_blank"
+                aria-label="Github"
+                >🐙</a
+              >
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+                >💼</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Ewan Roux. Tous droits réservés.</div>
+      </div>
+    </footer>
+  </body>
+</html>
