@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const lowerText = text.toLowerCase();
 
         if (lowerText.includes(searchTerm)) {
-          // Créer l'effet de surlignage avec un RegExp (insensible à la casse)
+          // Créer l'effet de surlignage avec un RegExp
           const regex = new RegExp(`(${searchTerm})`, "gi");
           p.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
           
@@ -39,10 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // 4. Si rien n'est trouvé, on peut vider "l'input" ou donner un "feedback
+      // 4. Si rien n'est trouvé, on peut vider "l'input"
       if (!found) {
         console.log("Aucune compétence correspondante.");
-        // Optionnel : searchInput.value = "";
       }
     }
   });
